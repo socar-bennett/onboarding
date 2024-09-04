@@ -9,6 +9,6 @@ class Car(Base):
     __tablename__ = "cars"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String)
-    number = Column(String)
+    name = Column(String(500))
+    number = Column(String(500))
     created_at = Column(DateTime, default=datetime.utcnow)
