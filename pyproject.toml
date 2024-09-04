@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "data-engineering-onboarding-bennett"
+version = "0.1.0"
+description = ""
+authors = ["socar-bennett <bennett@socar.kr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.112.2"
+sqlalchemy = "^2.0.32"
+uvicorn = "^0.30.6"
+black = "^24.8.0"
+isort = "^5.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
