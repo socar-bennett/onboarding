@@ -3,6 +3,10 @@ from datetime import datetime
 from pydantic import BaseModel
 
 
+class StatusResponse(BaseModel):
+    success: bool
+
+
 class CarBase(BaseModel):
     name: str
     number: str

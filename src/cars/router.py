@@ -10,7 +10,7 @@ router = APIRouter(
 )
 
 
-@router.post("/", response_model=schemas.Car)
+@router.post("/", response_model=schemas.StatusResponse)
 def create_car(car: schemas.CarCreate, db: Session = Depends(get_db)):
     return service.create_car(db=db, car=car)
 

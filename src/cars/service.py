@@ -9,10 +9,10 @@ def create_car(db: Session, car: schemas.CarCreate):
         db.add(db_car)
         db.commit()
         db.refresh(db_car)
-        return True
+        return {"success": True}
     except:
         db.rollback()
-        return False
+        return {"success": False}
 
 
 def get_car(db: Session, car_id: int):
